@@ -86,12 +86,12 @@ Done. No more Tor over Tor
 
 in /opt/torbrowser/Browser/defaults/pref add:
 
+## Disable certificate pinning
 pref("security.cert_pinning.enforcement_level", "0");
 
+## Allow import of certificates
 pref("security.nocertdb", "false");
 
-
-security.cert_pinning.enforcement_level
 
 ----------
 ## Stream Isolation ##
