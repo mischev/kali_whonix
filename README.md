@@ -52,23 +52,24 @@ Let's have tor connect over whonix-gw instead of local tor, which would make a t
 
 root@kali:~# apt-get install rinetd
 root@kali:~# vim /etc/rinetd.conf
+
 # SocksPorts
-# Tor's default port
+## Tor's default port
 127.0.0.1        9050      10.152.152.10    9050
-# Tor Browser Bundle's default port
+## Tor Browser Bundle's default port
 127.0.0.1        9150      10.152.152.10    9150
-# TorChat's default port
+## TorChat's default port
 127.0.0.1        11109     10.152.152.10    9119
-# Tor Messenger's default port
+## Tor Messenger's default port
 127.0.0.1        9152      10.152.152.10    9152
     
 # ControlPorts
-# Control Port Filter Proxy is running on Gateway's Port 9052
-# Tor's default port
+## Control Port Filter Proxy is running on Gateway's Port 9052
+## Tor's default port
 127.0.0.1        9051      10.152.152.10    9052
-# Tor Browser Bundle's default port
+## Tor Browser Bundle's default port
 127.0.0.1        9151      10.152.152.10    9052
-# Tor Messenger's default port
+## Tor Messenger's default port
 127.0.0.1        9153      10.152.152.10    9052
 
 vim ~/.bashrc
