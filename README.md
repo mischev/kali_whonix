@@ -94,5 +94,7 @@ security.cert_pinning.enforcement_level
 ----------
 ## Stream Isolation ##
 Install torsocks:
+
 apt install torsocks
+
 torsocks ssh -D 2222 root@lsakdjflaksjdflksd.onion
