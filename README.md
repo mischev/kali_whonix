@@ -85,7 +85,9 @@ Done. No more Tor over Tor
 # Change tor browser preferences
 
 in /opt/torbrowser/Browser/defaults/pref add:
+
 pref("security.cert_pinning.enforcement_level", "0");
+
 pref("security.nocertdb", "false");
 
 
