@@ -72,7 +72,7 @@ root@kali:~# vim /etc/rinetd.conf
 ## Tor Messenger's default port
 127.0.0.1        9153      10.152.152.10    9052
 
-vim ~/.bashrc
+> vim ~/.bashrc
 
 >     export TOR_SKIP_LAUNCH=1
 >     export TOR_SKIP_CONTROLPORTTEST=1
@@ -82,16 +82,14 @@ vim ~/.bashrc
 
 Done. No more Tor over Tor
 
-# Change tor browser preferences
+## Change tor browser preferences
 
 in /opt/torbrowser/Browser/defaults/pref add:
 
-## Disable certificate pinning
-pref("security.cert_pinning.enforcement_level", "0");
-
-## Allow import of certificates
-pref("security.nocertdb", "false");
-
+> # Disable certificate pinning
+> pref("security.cert_pinning.enforcement_level", "0");
+> # Allow import of certificates
+> pref("security.nocertdb", "false");
 
 ----------
 ## Stream Isolation ##
